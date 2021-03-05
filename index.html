@@ -4,23 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c720c7699a.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
         
     <!-- Navbar -->
-    <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="about.html">About</a></li>
-        <li><a href="porfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
+        <nav class="navbar">
+        <div class="navbar-container sticky">
+          <a href="index.html" id="navbar-logo">FGCodes</a>
+          <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-links" id="home-page">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./about.html" class="navbar-links" id="about-page">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./portfolio.html" class="navbar-links" id="portfolio-page"
+                >Portfolio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./contact.html" class="navbar-links" id="contact-page"
+                >Contact</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./blog.html" class="navbar-links" id="blog-page"
+                >Blog</a>
+            </li>
+            <li class="navbar-btn">
+              <a href="#" class="button" id="signin">SignIn</a>
+            </li>
+            <li class="navbar-btn">
+              <a href="#" class="button1" id="signup">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--  -->
+      <div class="hero" id="home">
+        <div class="hero-container">
+          <h1 class="hero-heading"> 👋 I'm <span>Fernando</span></h1>
+          <p class="hero-description">a</p>
+          <p class="hero-description">Web Developer</p>
+          <div class="hero-btn">
+            <button class="hero-btn-1"><a href="#">Portfolio</a></button>
+            <button class="hero-btn-1"><a href="#">blog</a></button>
+        </div>
+        </div>
+      </div>
+
+        <!-- About Section -->
+      <div class="main" id="about">
+        <div class="main-container">
+          <div class="main-content">
+            <h1>Learn more about me</h1>
+            <p>Check out my resume here <button class="circle-btn"><a href="#">></a></button></p>
+            <!-- <button class="circle-btn"><a href="#">></a></button> -->
+          </div>
+          <div class="main-img-container">
+            <div class="main-img-card" id="card-2">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="main" id="projects">
+        <div class="main-container">
+          <div class="main-img-container">
+            <div class="main-img-card"><i class="fas fa-layer-group"></i></div>
+          </div>
+          <div class="main-content">
+            <h1>What I've been working on?</h1>
+            <h2>Here's the latest project</h2>
+            <p>View project <button class="circle-btn"><a href="#">></a></button></p>
+            <button class="main-btn"><a href="#">More Projects</a></button>
+          </div>
+        </div>
+      </div>
+
+            <!-- Services Section -->
+      <div class="services" id="services">
+        <h1>Latest Posts</h1>
+        <div class="services-wrapper">
+          <div class="services-card">
+            <h2>Django in 2021</h2>
+            <p>AI Powered technology</p>
+            <div class="services-btn"><button>Read More</button></div>
+          </div>
+          <div class="services-card">
+            <h2>Html and Css</h2>
+            <p>Take the lepa</p>
+            <div class="services-btn"><button>Read More</button></div>
+          </div>
+          <div class="services-card">
+            <h2>Python for Begginers</h2>
+            <p>100 Combinations</p>
+            <div class="services-btn"><button>Read More</button></div>
+          </div>
+          <div class="services-card">
+            <h2>Django for Begginers</h2>
+            <p>1000's of colors</p>
+            <div class="services-btn"><button>Read More</button></div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Features Section -->
+      <div class="main" id="sign-up">
+        <div class="main-container">
+          <div class="main-content">
+            <h1>Join Our Team</h1>
+            <h2>Sign Up Today</h2>
+            <p>See what makes us different</p>
+            <button class="main-btn"><a href="#">Sign Up</a></button>
+          </div>
+          <div class="main-img-container">
+            <div class="main-img-card" id="card-2">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer Section -->
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-link-wrapper">
+              <div class="footer-link-items">
+              <a href="/" id="footer-logo">FGCodes</a>
+            </div>
+            <div class="footer-link-items">
+              <h2>About Me</h2>
+              <a href="#">Resume</a>
+            </div>
+            <div class="footer-link-items">
+              <h2>Contact Me</h2>
+              <a href="/">Contact</a>
+            </div>
+          </div>
+          <div class="footer-link-wrapper">
+            <div class="footer-link-items">
+              <h2>Videos</h2>
+              <a href="/"> Tutorials</a> <a href="/">Python</a>
+              <a href="/">Django</a>
+            </div>
+            <div class="footer-link-items">
+              <h2>Social Media</h2>
+              <a href="/">Github</a><a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social-media">
+          <div class="social-media-wrap">
+            <p class="website-rights">© FGCodes 2021. All rights reserved</p>
+            <div class="social-icons">
+              <a href="/" class="social-icon-link" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="/" class="social-icon-link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="/" class="social-icon-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" class="social-icon-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="/" class="social-icon-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="/" class="social-icon-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    
 
 
     <!-- scripts -->
